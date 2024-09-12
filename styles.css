@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
- 
+
 * {
     margin: 0;
     padding: 0;
     font-family: system-ui;
 }
- 
+
 body {
     height: 100vh;  
     width: 100vw;
@@ -17,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
- 
+
 body:before {
     content: "";
     position: absolute;
@@ -25,7 +25,7 @@ body:before {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.164);
 }
- 
+
 .frame {
     height: 400px;
     width: 370px;
@@ -37,25 +37,25 @@ body:before {
     border-radius: 10px;
     box-shadow: 0px 0px 5px white;
 }
- 
+
 .login {
     font-size: 50px;
     font-weight: bold;
     color: white;
-    margin-top: 0.5rem;
-    margin-bottom: 1.0rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
 }
- 
+
 .email,
 .password {
     width: 90%;
     height: auto;
     display: flex;
     align-items: center;
-    margin: 0.5rem;
+    margin: 0.3rem;
     position: relative;
 }
- 
+
 .email input,
 .password input {
     padding: 8px 8px 8px 15px;
@@ -68,18 +68,18 @@ body:before {
     outline: none;
     font-weight: bold;
 }
- 
+
 .email input::placeholder,
 .password input::placeholder {
     color: white;
     font-weight: bold;
 }
- 
- 
-.password {
+
+
+/* .password {
     margin-top: 30px;
-}
- 
+} */
+
 .email i,
 .password i{
     position: absolute;
@@ -89,8 +89,8 @@ body:before {
     transform: translateY(-50%);
     font-size: 20px;
 }
- 
- 
+
+
 .remember_forgot {
     height: auto;
     width: 90%;
@@ -99,7 +99,7 @@ body:before {
     justify-content: space-between;
     margin-top: 0.5rem;
 }
- 
+
 .remember_forgot .remember {
     height: auto;
     width: auto;
@@ -109,21 +109,21 @@ body:before {
     color: white;
     font-weight: bold;
 }
- 
- 
+
+
 .remember_forgot .remember input {
     height: 15px;
     width: 15px;
     margin-right: 0.2rem;
 }
- 
+
 .remember_forgot .forgot a {
     font-size: 17px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
- 
+
 .log {
     width: 90%;
     padding: 10px;
@@ -135,37 +135,37 @@ body:before {
     border-radius: 50px;
     cursor: pointer;
 }
- 
+
 .log:hover{
     background-color: rgb(128, 0, 85);
 }
- 
+
 .reg {
     margin-top: 0.6rem;
     color: white;
 }
- 
+
 .reg a {
     font-weight: bold;
     color: white;
     text-decoration: none;
 }
- 
+
 .reg a:hover {
     text-decoration: underline;
 }
- 
+
 #message {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 1em;
 }
- 
+
 .error {
     color: white;
     font-size: 0.8em;
-    margin-top: 5px;
+    margin-top: 2px;
 }
- 
+
 .spinner {
     display: inline-block;
     width: 20px;
@@ -175,24 +175,23 @@ body:before {
     border-top-color: #fff;
     animation: spin 1s ease-in-out infinite;
 }
- 
+
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
- 
+
 @media screen and (max-width: 600px) {
     .frame {
         width: 90%;
         padding: 20px;
     }
-   
+    
     input[type="text"], input[type="password"] {
         font-size: 14px;
     }
-   
+    
     .remember_forgot {
         flex-direction: column;
         align-items: flex-start;
     }
 }
- 
